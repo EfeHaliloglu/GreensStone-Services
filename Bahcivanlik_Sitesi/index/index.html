@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenStone Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="icon" href="images/İcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="navigator_bar.css">
+    <link rel="stylesheet" href="Giris.css">
+    <link rel="stylesheet" href="hizmetler.css">
+    <link rel="stylesheet" href="Projeler.css">
+    <link rel="stylesheet" href="nedenbiz.css">
+    <link rel="stylesheet" href="yorumlar.css">
+    <link rel="stylesheet" href="iletisim.css">
+    <style>
+        body.vucut {
+            
+            background-image: url(images/AI_3.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat:repeat;
+            background-attachment: fixed;
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            height: auto;      /* veya min-height: 100%; */
+            overflow-y: auto;  /* dikey scroll aktif */
+        }
+        
+        
+
+        
+        .site-footer {
+            background-color: rgb(160, 140, 120); /* Açık kahve/gri ton */
+            color: #fff;
+            padding: 40px 20px 20px 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .footer-col h3, .footer-col h4 {
+            margin-bottom: 15px;
+        }
+        .footer-col p, .footer-col li a {
+            color: #fff;
+            font-size: 14px;
+            line-height: 1.6;
+            text-decoration: none;
+        }
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-col ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-col ul li a:hover {
+            color: rgb(34, 139, 34); /* Yeşil hover */
+            transition: 0.3s;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 13px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            padding-top: 15px;
+        }
+        
+
+
+    
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .ana_menu {
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px;
+            }
+            .kutu_container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .giris_containerlar{
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 100px 50px 100px;
+        }
+
+        .resimler_giris{
+            display: flex;
+            width: 800px;
+            background-color: black;
+        }
+
+        .resimler_giris img{
+            width: 600px;
+        }
+        .resimler_giris p{
+            font-size: 18px;
+        }
+
+        
+        
+        
+        
+    </style>
+</head>
+<body class="vucut">
+
+    <header class="hero2">
+    <div class="ana_menu_div">
+        <nav class="ana_menu">
+        <a href="index.html" class="ana_menu_linkler"> Anasayfa</a>
+        <a href="urunler.html" class="ana_menu_linkler"> Projeler</a>
+        <a href="siparis.html" class="ana_menu_linkler"> İletişim</a>
+        <a href="hakkimizda.html" class="ana_menu_linkler"> Hakkımızda</a>
+        </nav>
+    </div>
+    </header>
+
+    <header class="hero">
+    <div class="side side--left">
+      <div class="image-wrap">
+        <img src="images/Bahcıvan.png" alt="Sol fotoğraf">
+      </div>
+      <div class="text-wrap">
+        <h2>Bahçe Düzenleme</h2>
+        <p>Profesyonel peyzaj & bakım hizmetleri.</p>
+      </div>
+    </div>
+
+    <div class="center-content">
+      <!-- İsterseniz ortada logo veya welcome metni koyabilirsiniz -->
+      <h1>Hoş geldiniz — GreenStone Bahçe & Tadilat</h1>
+      <p>İşinizi şansa bırakmayın. Ücretsiz keşif için arayın.</p>
+    </div>
+
+    <div class="side side--right">
+      <div class="text-wrap">
+        <h2>Tadilat & Onarım</h2>
+        <p>Kaliteli, hızlı ve güvenilir tadilat çözümleri.</p>
+      </div>
+      <div class="image-wrap">
+        <img src="images/Tadilat_1.jpg" alt="Sağ fotoğraf">
+      </div>
+    </div>
+  </header>
+    
+    
+    <div class="hizmetler_container">
+
+    
+    <div class="hizmetler">
+        <!-- Soldaki kartlar -->
+        <div class="hizmet_karti">
+            <img src="images/PeyzajBahce-Bakim-Hizmetleri.jpg" alt="Bahçe" class="hizmet_icon">
+            <div class="hizmet_aciklama">
+                <h3>Çim Biçme & Budama</h3>
+                <p>Çimlerinizi düzenli biçiyor, ağaç ve çalılarınızı sağlıklı tutuyoruz.</p>
+            </div>
+        </div>
+
+        <div class="hizmet_karti">
+            <img src="images/PeyzajTasarım.jpg" alt="Tadilat" class="hizmet_icon">
+            <div class="hizmet_aciklama">
+                <h3>Peyzaj Tasarımı</h3>
+                <p>Bahçenizin her köşesini estetik ve fonksiyonel bir şekilde tasarlıyoruz.</p>
+            </div>
+        </div>
+
+        <div class="hizmet_karti">
+            <img src="images/SulamaBakım.jpg" alt="Tasarım" class="hizmet_icon">
+            <div class="hizmet_aciklama">
+                <h3>Sulama & Bakım Sistemleri</h3>
+                <p>Otomatik sulama ve bakım sistemleri kurarak bahçenizi hep canlı tutuyoruz.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="hizmetler2">
+        <!-- Sağdaki kartlar -->
+        <div class="hizmet_karti2">
+            <img src="images/GenelTadilat.jpg" class="hizmet_icon" alt="Bahçe">
+            <div class="hizmet_aciklama">
+                <h3>Genel Tadilat & Yenileme</h3>
+                <p>Ev veya iş yerinizin tüm alanlarında tadilat ve yenileme çalışmaları yapıyoruz</p>
+            </div>
+        </div>
+
+        <div class="hizmet_karti2">
+            <img src="images/ElektrikSuTesisat.jpg" class="hizmet_icon" alt="Tadilat">
+            <div class="hizmet_aciklama">
+                <h3>Elektrik, Su & Tesisat İşleri</h3>
+                <p>Elektrik, su, ısıtma-soğutma ve diğer tesisat işleri profesyonel ekibimiz tarafından güvenle gerçekleştirilir.</p>
+            </div>
+        </div>
+
+        <div class="hizmet_karti2">
+            <img src="images/Dekorasyon & İç Mekan Düzenleme.jpg" class="hizmet_icon" alt="Tasarım">
+            <div class="hizmet_aciklama">
+                <h3>Dekorasyon & İç Mekan Düzenleme</h3>
+                <p>Boya, alçıpan, parke, dolap ve raf montajı gibi iç mekan düzenlemeleri ile yaşam alanınızı yeniliyoruz.</p>
+            </div>
+        </div>
+    </div>
+
+    
+
+</div>
+    <div style="text-align: center;">
+    <p class="dahaoncetamamladıgımız">Daha Önceden Tamamladığımız Projeler</p>
+    </div>
+    <div class="TamamlananProjeler">
+        <div class="projeler">
+            <img src="images/TamamlananProje_1.jpg" alt="">
+        </div>
+        <div class="projeler">
+            <img src="images/Tamamlanan_Projeler_2.jpg" alt="">
+        </div>
+        <div class="projeler">
+            <img src="images/Tamamlanan_Proje_3.jpg" alt="">
+        </div>
+        <div class="projeler">
+            <img src="images/tamamlanan_Proje_4.jpg" alt="">
+        </div>
+
+    </div>
+    <button class="fotogaleri_button">
+        Daha Fazla Proje Gör
+    </button>
+
+    <div style="text-align: center;">
+        <div class="nedenbiztxt">
+            Neden Bizi Tercih Etmelisiniz?
+        </div>
+    </div>
+
+
+    <div class="hizmet-alani">
+
+    <div class="sol-resim">
+        <img src="images/Bahcıvan.png" alt="">
+    </div>
+
+    <div class="orta-hizmetler">
+        <div class="hizmet">
+            <h3>Profesyonel Ekip</h3>
+            <p>Uzman kadromuzla her işi titizlikle ve doğru ekipmanlarla gerçekleştiriyoruz.</p>
+        </div>
+        <div class="hizmet">
+            <h3>Zamanında Teslim</h3>
+            <p>Belirlediğimiz tarihlerde işinizi zamanında tamamlamayı garanti ediyoruz.</p>
+        </div>
+        <div class="hizmet">
+            <h3>Kaliteli Malzeme Kullanımı</h3>
+            <p>Her projede uzun ömürlü ve dayanıklı malzemeler tercih ediyoruz.</p>
+        </div>
+        <div class="hizmet">
+            <h3>Hızlı İletişim ve Destek</h3>
+            <p>Süreç boyunca her sorunuza hızlıca cevap veriyor, şeffaf bilgi sağlıyoruz.</p>
+        </div>
+    </div>
+
+    <div class="sag-resim">
+        <img src="images/tamirci2.jpg" alt="">
+    </div>
+     </div>
+
+    <div style="text-align: center;">
+        <div class="yorumlar_txt">
+            <p>Bazı Kullanıcı Yorumlarımız..</p>
+        </div>
+    </div>
+
+    <div class="yorum_Konteyner">
+     
+    <div class="yorumlar">
+        <img src="images/Yorumcu1.png" alt="">
+        <div class="yorumlar_aciklama">
+            <h3>Ahmet Y.</h3>
+            <p>Bahçem için aldığım düzenleme hizmetinden çok memnun kaldım. İşlerini titizlikle yapan bir ekip, gerçekten güvenilirler. Teşekkürler!</p>
+        </div>
+    </div>
+
+    <div class="yorumlar">
+        <img src="images/yorumcu2.jpg" alt="">
+        <div class="yorumlar_aciklama">
+            <h3>Fatih Y.</h3>
+            <p>Evimin tadilatını yaptırdım ve sonuç harika oldu. Planlama ve uygulama çok profesyoneldi, herkesin tavsiye edebileceği bir hizmet!</p>
+        </div>
+    </div>
+
+    </div>
+    
+    <div style="text-align: center;">
+        <div class="yorumlar_txt">
+            <p>Bizimle İletişime Geçmek İster Misiniz?</p>
+        </div>   
+    </div>
+    <div style="text-align: center;">
+        <div class="iletisimtxt">
+            <p>Projeleriniz veya sorularınız için bize hızlıca ulaşabilirsiniz. Hızlı dönüş garantisi!</p>
+        </div>   
+    </div>
+    <div class="butonlar_container">
+        <div class="buton">
+            <button class="iletisimbutonu"><a href=""><i class="fa-brands fa-whatsapp"></i>whatsapp</a></button>
+        </div>
+        <div class="buton">
+            <button class="iletisimbutonu"><a href=""><i class="fa-solid fa-phone"></i>Telefon</a></button>
+        </div>
+        <div class="buton">
+            <button class="iletisimbutonu"><a href=""><i class="fa-regular fa-envelope"></i>E-Mail </a> </button>
+        </div>
+    </div>  
+    
+    <footer class="site-footer">
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3>GreenStone Services</h3>
+            <p>Doğayı ve Evinizi Yeniliyoruz</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Hızlı Linkler</h4>
+            <ul>
+                <li><a href="#">Ana Sayfa</a></li>
+                <li><a href="#">Hakkımızda</a></li>
+                <li><a href="#">Örnek İşler / Foto Galeri</a></li>
+                <li><a href="#">İletişim</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>İletişim</h4>
+            <p>Telefon: +90 532 123 45 67</p>
+            <p>E-mail: info@GreenStone.com</p>
+            <p>Adres: Atatürk Cad. No:45, Beşiktaş, İstanbul, Türkiye</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 GreenStone Services. Tüm Hakları Saklıdır.</p>
+    </div>
+</footer>
+
+</body>
+</html>
