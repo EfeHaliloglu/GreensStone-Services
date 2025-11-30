@@ -1,0 +1,115 @@
+/* styles.css - temel stiller */
+:root{
+  --side-width: 320px; /* yan fotoğraf alanı genişliği (masaüstü) */
+  --mobile-break: 820px;
+  --hero-height: 90vh;
+  --gap: 24px;
+  --bg: #f5f5f5;
+}
+
+*{box-sizing: border-box}
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: #191919;
+}
+
+
+/* Giriş bölümünün arka plan resmi */
+.hero{
+  display: grid;
+  grid-template-columns: var(--side-width) 1fr var(--side-width);
+  align-items: center;
+  height: var(--hero-height);
+  gap: var(--gap);
+  padding: 2rem;
+
+  /* ARKA PLAN: senin için üretilen yeşil doku */
+  background-image: url(images); /*İNDEX ÜZERİNDEN AYARLANDI*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* Ortadaki içerik */
+.center-content{
+  text-align: center;
+  padding: 1rem;
+}
+.center-content h1{
+  margin:0 0 .5rem 0;
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+}
+.center-content p{ margin:0; opacity:.9 }
+
+/* Her iki yanın ortak düzeni */
+.side{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 100%;
+}
+
+/* Sol taraf: resim-sol, yazı-sağ olacak şekilde */
+.side--left{
+  justify-content: flex-start; /* solda başlat */
+}
+.side--right{
+  justify-content: flex-end; /* sağda başlat */
+  direction: ltr; /* metin yönü normal olsun */
+}
+
+/* Resim sarıcı: beyaz arka plan, biraz gölge, yuvarlatılmış köşe */
+.image-wrap{
+  background: #fff;
+  padding: 8px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+/* Resmi boyutlandırma: kutunun genişliğine göre ayarlı */
+.image-wrap img{
+  width: 280px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Yazı kutusu: ortalanmış ve metin sağ/sol hizası */
+.side .text-wrap{
+  max-width: calc(var(--side-width) - 140px);
+}
+.side--left .text-wrap{ text-align: left; }
+.side--right .text-wrap{ text-align: right; }
+
+/* Başlık/paragraf stilleri */
+.side .text-wrap h2{ margin:0 0 .25rem 0; font-size: 1.4rem; }
+.side .text-wrap p{ margin:0; font-size: .95rem; opacity:.85 }
+
+/* Responsive: küçük ekranlarda foto + metin alt alta dizilir */
+@media (max-width: 820px){
+  .hero{
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: stretch;
+  }
+  .side{
+    flex-direction: column; /* resim üstte, yazı altta */
+    text-align: center;
+    justify-content: center;
+    gap: .6rem;
+    padding: .8rem 0;
+  }
+  .image-wrap img{ width: 60vw; max-width: 340px; }
+  .side .text-wrap{ max-width: 100% }
+  .side--right .text-wrap, .side--left .text-wrap{ text-align: center; }
+  .center-content{ padding: 1.2rem 0; }
+}

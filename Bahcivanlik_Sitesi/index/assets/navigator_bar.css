@@ -1,0 +1,38 @@
+
+        .hero2{
+               
+                background-color: rgb(102, 145, 102);
+                width: 100%;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+        }
+        .ana_menu_div {
+        max-width: 1200px;  /* içerik genişliği */
+        margin: 0 auto;     /* ortala */
+        padding: 10px 0;    /* üst-alt boşluk */
+        display: flex;
+        justify-content: center;
+        }
+
+        .ana_menu {
+        display: flex;
+        gap: 40px;
+        background: none;   /* tablo kutu arka planını kaldırdık */
+        border: none;
+        }
+
+        .ana_menu_linkler {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: color 0.3s;
+        }
+
+        .ana_menu_linkler:hover {
+        color: green;
+        }
