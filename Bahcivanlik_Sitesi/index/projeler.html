@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/navigator_bar.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="assets/footer.css">
+    <style>
+        .vucut{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: auto;
+            background-color: rgb(203, 230, 221);
+            font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+        .hero3 {
+        width: 100%;
+        height: 40vh; 
+        background-image: url(images/Giris\,AI.png);
+        background-repeat: no-repeat;
+        background-size: cover;        
+        background-position: center;   
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero3 p{
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        font-size: 64px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 150px;
+        color: whitesmoke;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+    }
+
+    
+
+
+    /* 🚨 ÖNEMLİ: Gizleme Sınıfı */
+    .gizle {
+        /* Bu sınıf eklendiğinde kart anında kaybolur */
+        display: none !important; 
+    }
+
+    .filtre-btn.aktif {
+        background-color: #007bff;
+        color: white;
+    }
+
+    .filtre-butonlari {
+        display: flex; 
+        gap: 10px;    
+        margin-bottom: 30px; 
+        justify-content: center; 
+    }
+    .filtre-btn {
+    padding: 10px 20px;
+    border: 2px solid #38761d; 
+    background-color: white;
+    color: #38761d; 
+    cursor: pointer;
+    border-radius: 20px; 
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease; 
+    }
+
+    .filtre-btn:hover {
+    background-color: #c7c5c5; 
+    }
+
+    .filtre-btn.aktif {
+    background-color: #38761d; 
+    color: white; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    }
+
+    /* Proje Kartlarının Konteyneri */
+    .proje-konteyner {
+    display: grid; 
+    
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    margin: 0 auto;
+    margin-bottom: 200px;
+    max-width: 1200px; /
+    }
+
+    .proje-kart {
+    
+    text-decoration: none; 
+    color: #333; 
+    
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    
+    
+    transition: all 0.5s ease-in-out; 
+    }
+
+    .proje-kart img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    }
+
+    .proje-kart h3, .proje-kart p {
+        padding: 0 15px;
+    }
+
+   
+
+    .proje-kart {
+        background-color: white;
+        transition: opacity 0.4s ease-out, transform 0.4s ease-out; 
+        opacity: 1;
+        transform: scale(1); 
+    }
+
+    
+
+
+    </style>
+</head>
+<body class="vucut">
+    
+    <div class="hero3">
+        <header class="hero2">
+        <div class="ana_menu_div">
+            
+            <div class="logo_div">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Site Logosu" class="logo"> 
+                </a>
+            </div>
+            
+            <div class="ana_menu">
+                <a href="index.html" class="ana_menu_linkler"> Anasayfa</a>
+                <a href="projeler.html" class="ana_menu_linkler"> Projeler</a>
+                <a href="hakkimizda.html" class="ana_menu_linkler"> Hakkımızda</a>
+                <a href="iletisim.html" class="ana_menu_linkler"> İletişim</a>
+                </div>
+
+        </div>
+        </header>
+        <p>Tamamladığımız Projeler</p>
+    </div>
+
+    <div class="portfolyo-alani">
+    
+    <h2 style="text-align: center; margin-top: 50px; font-size: 32px; color: #38761d;">Tamamlanan Projelerimiz</h2>
+    <p style="text-align: center; margin-bottom: 40px; color: #666;">Hizmetlerimizdeki kaliteyi ve dönüşümü kendi gözlerinizle görün.</p>
+
+    <div class="filtre-butonlari">
+        <button class="filtre-btn aktif" data-filter="tumu">Tümü</button>
+        <button class="filtre-btn" data-filter="tadilat">Tadilat & Tamirat</button>
+        <button class="filtre-btn" data-filter="bahcivanlik">Bahçıvanlık & Peyzaj</button>
+        </div>
+
+    <div class="proje-konteyner">
+        
+        <a href="Projeler_1.html" class="proje-kart" data-category="tadilat">
+            <img src="images/banyo_tadilat_1.png" alt="Modern Banyo Tadilatı">
+            <div class="kart-icerik">
+                <h3>Modern Banyo Tadilatı</h3>
+                <p>kadıköy - Müşterimiz için anahtar teslimi modern banyo yenilemesi.</p>
+            </div>
+        </a>
+
+        <a href="Projeler_2.html" class="proje-kart" data-category="bahcivanlik">
+            <img src="images/peyzaj-proje_1.jpg" alt="Villa Bahçe Peyzajı">
+            <div class="kart-icerik">
+                <h3>Villa Bahçe Peyzajı</h3>
+                <p>Sarıyer - 3D tasarıma uygun, tam otomatik sulama sistemli peyzaj uygulaması.</p>
+            </div>
+        </a>
+        
+        <a href="Projeler_3.html" class="proje-kart" data-category="tadilat">
+            <img src="images/proje_mutfak_1.png" alt="Komple Mutfak Yenileme">
+            <div class="kart-icerik">
+                <h3>Komple Mutfak Yenileme</h3>
+                <p>Kartal - Dolap ve ışıklandırma tasarımı yapılmış, modern mutfak projesi.</p>
+            </div>
+        </a>
+
+        <a href="Projeler_4.html" class="proje-kart" data-category="bahcivanlik">
+            <img src="images/Apartman_peyzaj_1.jpg" alt="Apartman Bahçe Bakımı">
+            <div class="kart-icerik">
+                <h3>Apartman Yıllık Bahçe Bakımı</h3>
+                <p>Esenyurt - Düzenli bakım, budama ve bitki sağlığı hizmetleri.</p>
+            </div>
+        </a>
+
+        <a href="Projeler_5.html" class="proje-kart" data-category="tadilat">
+            <img src="images/Kayar_kapı_1.jpg" alt="Apartman Bahçe Bakımı">
+            <div class="kart-icerik">
+                <h3>Kayar Kapı Dönüşümü</h3>
+                <p>Gaziosmanpaşa - Sıradan kapı yerine kayar kapı montajı.</p>
+            </div>
+        </a>
+
+        <a href="Projeler_6.html" class="proje-kart" data-category="bahcivanlik">
+            <img src="images/Cati_peyzj_1.jpg" alt="Apartman Bahçe Bakımı">
+            <div class="kart-icerik">
+                <h3>Ofis Çatısına Bahçe Uygulaması</h3>
+                <p>Levent - Ofis binasının çatısına oturma alanlı , yeşil bahçe uygulaması.</p>
+            </div>
+        </a>
+        
+    </div>
+</div>
+
+<footer class="site-footer">
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3>GreenStone Services</h3>
+            <p>Doğayı ve Evinizi Yeniliyoruz</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Hızlı Linkler</h4>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li><a href="#">Örnek İşler / Foto Galeri</a></li>
+                <li><a href="#">İletişim</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>İletişim</h4>
+            <p>Telefon: +90 532 123 45 67</p>
+            <p>E-mail: info@GreenStone.com</p>
+            <p>Adres: Atatürk Cad. No:45, Beşiktaş, İstanbul, Türkiye</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 GreenStone Services. Tüm Hakları Saklıdır.</p>
+    </div>
+</footer>
+
+
+
+
+</body>
+<script>
+
+    // document.addEventListener('DOMContentLoaded', ... sayfa yüklendiğinde çalışmasını sağlar
+document.addEventListener('DOMContentLoaded', function() {
+    
+    // 1. Gerekli tüm elementleri seç
+    const filtreButonlari = document.querySelectorAll('.filtre-btn');
+    const projeKartlari = document.querySelectorAll('.proje-kart');
+
+    // 2. Her bir filtreleme butonuna tıklama olay dinleyicisi ekle
+    filtreButonlari.forEach(button => {
+        button.addEventListener('click', function() {
+            
+            // a. Tıklanan butonun filtre değerini al
+            const filtreDegeri = this.getAttribute('data-filter'); // Örn: 'tadilat'
+
+            // b. Butonun görünümünü güncelle (Aktif sınıfını ayarla)
+            filtreButonlari.forEach(btn => btn.classList.remove('aktif'));
+            this.classList.add('aktif');
+
+            // c. Tüm proje kartlarını filtrele
+            projeKartlari.forEach(kart => {
+                const kategori = kart.getAttribute('data-category');
+
+                if (filtreDegeri === 'tumu') {
+                    // 'Tümü' seçiliyse, tüm kartları göster
+                    kart.classList.remove('gizle');
+                } else if (kategori === filtreDegeri) {
+                    // Kartın kategorisi filtre değeriyle tam eşleşiyorsa göster
+                    kart.classList.remove('gizle');
+                } else {
+                    // Eşleşmiyorsa gizle
+                    kart.classList.add('gizle');
+                }
+            });
+        });
+    });
+});
+</script>
+</html>

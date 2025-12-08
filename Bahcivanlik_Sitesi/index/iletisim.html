@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/navigator_bar.css">
+    <link rel="stylesheet" href="assets/iletisim_iletisim.css">
+    <link rel="stylesheet" href="assets/footer.css">
+    <link rel="stylesheet" href="assets/iletisim_konum_calisma.css">
+    <style>
+        .vucut{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: auto;
+            background-color: rgb(203, 230, 221);
+            font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        .hero3 {
+        width: 100%;
+        height: 40vh; 
+        background-image: url(images/Giris\,AI.png);
+        background-repeat: no-repeat;
+        background-size: cover;        
+        background-position: center;   
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero3 p{
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        font-size: 64px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 150px;
+        color: whitesmoke;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+    }
+
+
+    .sorular_txt{
+            display: block;
+            text-align: center;
+            padding: 24px 24px;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px black;
+            background-color: rgb(170, 200, 180);
+            margin-top: 100px;
+
+    }
+    .sorular_ortala{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            background-color: white;
+            padding: 30px; /* Padding azaltıldı */
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 12px;
+            max-width: 1000px; /* Max genişlik artırıldı */
+        }
+
+    .sorular_tablo{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .sorular{
+        display: flex;
+        background-color: white;
+        border-bottom: 2px solid #eee;
+
+    }
+    .sorular h2{
+        display: flex;
+        flex-grow: 1; /* H2'nin tüm alanı kaplamasını sağlar */
+        justify-content: center; /* YATAY ORTALAMA */
+        text-align: center;
+        margin: 0; /* H2'nin varsayılan marjinlerini sıfırlamak önemlidir */
+        padding: 5px 0;
+        font-size: 20px;
+    }
+        
+
+        @media (max-width: 768px) {
+            .ana_menu {
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px;
+            }
+            .kutu_container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+    </style>
+</head>
+<body class="vucut">
+
+    <div class="hero3">
+        <header class="hero2">
+        <div class="ana_menu_div">
+            
+            <div class="logo_div">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Site Logosu" class="logo"> 
+                </a>
+            </div>
+            
+            <div class="ana_menu">
+                <a href="index.html" class="ana_menu_linkler"> Anasayfa</a>
+                <a href="projeler.html" class="ana_menu_linkler"> Projeler</a>
+                <a href="hakkimizda.html" class="ana_menu_linkler"> Hakkımızda</a>
+                <a href="iletisim.html" class="ana_menu_linkler"> İletişim</a>
+                </div>
+
+        </div>
+        </header>
+        <p>Bizimle İletişime Geçin</p>
+    </div>
+    
+    
+
+    <form action="">
+        <div class="ortala">
+            <div class="formlar">
+
+                <div class="formlar_grup">
+                    <label for="isim">İsim:</label>
+                    <input type="text">
+                </div>
+                <div class="formlar_grup">
+                    <label for="Mail">Mail:</label>
+                    <input type="text">
+                </div>
+                <div class="formlar_grup">
+                    <label for="Telefon">Telefon:</label>
+                    <input type="text">
+                </div>
+                <div class="formlar_grup">
+                    <label for="mesaj">Mesaj:</label>
+                    <textarea name="" id="" class="mesaj_alanı"></textarea>
+                </div>
+                <button type="submit" class="gonder_buton">Gönder</button>
+            </div>
+        </div>
+    </form>
+
+    <div style="text-align: center;">
+        <h2 class="calisma_text">Çalışma Saatlerimiz</h2>
+    </div>
+
+    <div class="calisma_saatleri_ortala">
+        <div class="calisma_tablo">
+            
+            <div class="calisma_satir">
+                <span class="calisma_satir_gun">Pazartesi:</span>
+                <span class="calisma_satir_saat">08:00 - 20:00</span>
+            </div>
+            
+            <div class="calisma_satir">
+                <span class="calisma_satir_gun">Salı:</span>
+                <span class="calisma_satir_saat">08:00 - 20:00</span>
+            </div>
+            
+            <div class="calisma_satir">
+                <span class="calisma_satir_gun">Çarşamba:</span>
+                <span class="calisma_satir_saat">08:00 - 20:00</span>
+            </div>
+            
+            <div class="calisma_satir">
+                <span class="calisma_satir_gun">Perşembe:</span>
+                <span class="calisma_satir_saat">08:00 - 20:00</span>
+            </div>
+            
+            <div class="calisma_satir">
+                <span class="calisma_satir_gun">Cuma:</span>
+                <span class="calisma_satir_saat">08:00 - 20:00</span>
+            </div>
+            
+            <div class="calisma_satir" style="color: red;">
+                <span class="calisma_satir_gun">Cumartesi:</span>
+                <span class="calisma_satir_saat">12:00 - 20:30</span>
+            </div>
+            
+            <div class="calisma_satir" style="color: red;">
+                <span class="calisma_satir_gun">Pazar:</span>
+                <span class="calisma_satir_saat">12:00 - 20:30</span>
+            </div>
+            
+        </div>
+    </div>
+
+    <div style="text-align: center;">
+        <h2 class="sorular_txt">Sıkça Sorulan Sorular</h2>
+    </div>
+
+    <div class="sorular_ortala">
+        <div class="sorular_tablo">
+
+            <div class="sorular">
+                <h2 >Teklif almak ücretli midir?</h2>
+            </div>
+            <div class="sorular" style="border-bottom: none;">
+                Hayır, ilk keşif ziyaretimiz ve size özel fiyat teklifimizin hazırlanması tamamen ücretsizdir. Büyük ölçekli veya kompleks projeler için detaylı tas
+                arım/mühendislik çizimleri talep edilirse bunun için küçük bir ücret alınabilir; ancak bu ücret, projenin bize verilmesi durumunda toplam fiyattan düşülür.
+            </div>
+
+            <div class="sorular">
+                <h2 >Tadilat süresi ne kadar sürer?</h2>
+            </div>
+            <div class="sorular" style="border-bottom: none;">
+                Süre, projenin kapsamına bağlıdır. Örneğin, standart bir banyo tadilatı 7-10 gün sürerken, 
+                komple ev tadilatı 6-10 hafta sürebilir. Teklif aşamasında size kesin bir proje takvimi sunuyoruz.
+            </div>
+
+             <div class="sorular">
+                <h2 >Ödeme seçenekleriniz nelerdir?</h2>
+            </div>
+            <div class="sorular" style="border-bottom: none;">
+                Nakit, banka havalesi/EFT ve kredi kartı ile ödeme kabul ediyoruz. Büyük projelerde genellikle işin aşamalarına göre 
+                (%40 başlangıç, %30 ara ödeme, %30 teslimat) ödeme planı oluşturulur."
+            </div>
+
+
+            <div class="sorular">
+                <h2 >Fiyat teklifi ne kadar süre geçerlidir?</h2>
+            </div>
+            <div class="sorular" style="border-bottom: none;">
+                Tekliflerimiz genellikle 30 gün boyunca geçerlidir. Malzeme fiyatlarındaki dalgalanmalar nedeniyle bu süreden sonra teklifimizi güncellememiz gerekebilir.
+            </div>
+
+            <div class="sorular">
+                <h2 >Peyzaj tasarımı hizmetiniz neleri kapsıyor?</h2>
+            </div>
+            <div class="sorular" style="border-bottom: none;">
+                Peyzaj tasarımımız; 3D çizim ve modelleme, bitki seçimi ve yerleşimi, sulama sistemi projelendirme,
+                 aydınlatma planı ve sert zemin uygulamalarını (deck, yol) kapsar. Size özel bir konsept oluşturulur.
+            </div>
+
+            <div class="sorular">
+                <h2 >İş sırasında oluşabilecek hasarlar sigortalı mı?</h2>
+            </div>
+            <div class="sorular" style="border-bottom: none;">
+                Şirketimiz, iş sırasında mülkünüzde veya çevrede oluşabilecek olası hasarları kapsayan Mali Sorumluluk
+                 Sigortasına sahiptir. Böylece gönül rahatlığıyla hizmet alabilirsiniz.
+            </div>
+
+            
+        </div>
+    </div>
+
+    <div class="saatler_ve_harita_sutun konum_sutun">
+            <div class="konum_kapsayici">
+                <div class="konum">
+                    <h2 style="background-color: ;">Konumumuz</h2>
+                </div>
+                <div class="konum_harita">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2126.935866277281!2d28.972249575792006!3d41.070270310559174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab63f6f8193f1%3A0x36c864a929a1018c!2zQmXFn2lrdGHFny_EsHN0YW5idWw!5e0!3m2!1str!2str!4v1765024068085!5m2!1str!2str" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;"
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade" ></iframe>
+                </div>
+            </div>
+        </div>
+
+    <footer class="site-footer">
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3>GreenStone Services</h3>
+            <p>Doğayı ve Evinizi Yeniliyoruz</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Hızlı Linkler</h4>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li><a href="projeler.html">Örnek İşler / Foto Galeri</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>İletişim</h4>
+            <p>Telefon: +90 532 123 45 67</p>
+            <p>E-mail: info@GreenStone.com</p>
+            <p>Adres: Atatürk Cad. No:45, Beşiktaş, İstanbul, Türkiye</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 GreenStone Services. Tüm Hakları Saklıdır.</p>
+    </div>
+</footer>
+
+</body>
+</html>

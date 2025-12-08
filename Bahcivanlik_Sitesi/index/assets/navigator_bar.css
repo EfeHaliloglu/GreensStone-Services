@@ -1,38 +1,59 @@
 
-        .hero2{
-               
-                background-color: rgb(102, 145, 102);
-                width: 100%;
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-        }
-        .ana_menu_div {
-        max-width: 1200px;  /* içerik genişliği */
-        margin: 0 auto;     /* ortala */
-        padding: 10px 0;    /* üst-alt boşluk */
-        display: flex;
-        justify-content: center;
-        }
 
-        .ana_menu {
-        display: flex;
-        gap: 40px;
-        background: none;   /* tablo kutu arka planını kaldırdık */
-        border: none;
-        }
+.hero2 {
+    background-color: rgb(102, 145, 102); 
+    width: 100%;
+}
 
-        .ana_menu_linkler {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 18px;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        transition: color 0.3s;
-        }
 
-        .ana_menu_linkler:hover {
-        color: green;
-        }
+.ana_menu_div {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 10px 20px; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.logo{
+        object-fit: contain;
+        width:80px;
+         height: auto;
+}
+
+.logo_div a img {
+    height: 60px; 
+    display: block;
+}
+
+
+.ana_menu {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    
+   
+    flex: 1; 
+    justify-content: center;
+    /* ------------------------------------------- */
+}
+
+/* Menü Bağlantı Linkleri */
+.ana_menu_linkler {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s;
+}
+
+/* Menü Bağlantısı Hover Etkisi */
+.ana_menu_linkler:hover {
+    color: #4CAF50; 
+}

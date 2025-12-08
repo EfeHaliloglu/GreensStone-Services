@@ -13,10 +13,11 @@
     <link rel="stylesheet" href="assets/iletisim.css">
     <link rel="stylesheet" href="assets/hizmetler.css">
     <link rel="stylesheet" href="assets/nedenbiz.css">
+    <link rel="stylesheet" href="assets/footer.css">
     <style>
         body.vucut {
             
-            background-color: rgb(200, 230, 200);
+            background-color: rgb(203, 230, 221);
             background-size: cover;
             background-position: center;
             background-repeat:repeat;
@@ -28,64 +29,6 @@
         }
         
         
-
-        
-        .site-footer {
-            background-color: rgb(160, 140, 120); /* Açık kahve/gri ton */
-            color: #fff;
-            padding: 40px 20px 20px 20px;
-            font-family: Arial, sans-serif;
-        }
-
-        .footer-container {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 30px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .footer-col h3, .footer-col h4 {
-            margin-bottom: 15px;
-        }
-        .footer-col p, .footer-col li a {
-            color: #fff;
-            font-size: 14px;
-            line-height: 1.6;
-            text-decoration: none;
-        }
-        .footer-col ul {
-            list-style: none;
-            padding: 0;
-        }
-        .footer-col ul li {
-            margin-bottom: 8px;
-        }
-
-        .footer-col ul li a:hover {
-            color: rgb(34, 139, 34); /* Yeşil hover */
-            transition: 0.3s;
-        }
-
-        .footer-bottom {
-            text-align: center;
-            margin-top: 10px;
-            font-size: 13px;
-            border-top: 1px solid rgba(255,255,255,0.2);
-            padding-top: 15px;
-        }
-        
-
-
-    
-        @media (max-width: 768px) {
-            .footer-container {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-        }
 
         @media (max-width: 768px) {
             .ana_menu {
@@ -126,16 +69,24 @@
 </head>
 <body class="vucut">
 
-    <header class="hero2">
-    <div class="ana_menu_div">
-        <nav class="ana_menu">
-        <a href="index.html" class="ana_menu_linkler"> Anasayfa</a>
-        <a href="urunler.html" class="ana_menu_linkler"> Projeler</a>
-        <a href="siparis.html" class="ana_menu_linkler"> İletişim</a>
-        <a href="hakkimizda.html" class="ana_menu_linkler"> Hakkımızda</a>
-        </nav>
+   <div class="hero2">
+        <div class="ana_menu_div">
+            
+            <div class="logo_div">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Site Logosu" class="logo"> 
+                </a>
+            </div>
+            
+            <div class="ana_menu">
+                <a href="index.html" class="ana_menu_linkler"> Anasayfa</a>
+                <a href="projeler.html" class="ana_menu_linkler"> Projeler</a>
+                <a href="hakkimizda.html" class="ana_menu_linkler"> Hakkımızda</a>
+                <a href="iletisim.html" class="ana_menu_linkler"> İletişim</a>
+                </div>
+
+        </div>
     </div>
-    </header>
 
     <header class="hero" style="background-image: url(images/Giris\,AI.png);">
     <div class="side side--left">
@@ -166,8 +117,9 @@
   </header>
     
     <div style="text-align: center;">
-        <div class="hizmetlertxt">sağladığımız Hizmetler</div>  
+        <div class="hizmetlertxt">Sağladığımız Hizmetler</div>  
     </div>
+
     <div class="hizmetler_container">
 
     
@@ -228,8 +180,9 @@
     
 
 </div>
+
     <div style="text-align: center;">
-    <p class="dahaoncetamamladıgımız">Daha Önceden Tamamladığımız Projeler</p>
+        <p class="dahaoncetamamladıgımız">Daha Önceden Tamamladığımız Projeler</p>
     </div>
     <div class="TamamlananProjeler">
         <div class="projeler">
@@ -247,7 +200,7 @@
 
     </div>
     <button class="fotogaleri_button">
-        Daha Fazla Proje Gör
+        <a href="projeler.html">Daha Fazla Proje Gör</a>
     </button>
 
     <div style="text-align: center;">
@@ -288,9 +241,9 @@
      </div>
 
     <div style="text-align: center;">
-        <div class="yorumlar_txt">
-            <p>Bazı Kullanıcı Yorumlarımız..</p>
-        </div>
+       
+            <p class="yorumlar_txt">Bazı Kullanıcı Yorumlarımız..</p>
+    
     </div>
 
     <div class="yorum_Konteyner">
@@ -314,9 +267,7 @@
     </div>
     
     <div style="text-align: center;">
-        <div class="yorumlar_txt">
-            <p>Bizimle İletişime Geçmek İster Misiniz?</p>
-        </div>   
+            <p class="yorumlar_txt">Bizimle İletişime Geçmek İster Misiniz?</p>
     </div>
     <div style="text-align: center;">
         <div class="iletisimtxt">

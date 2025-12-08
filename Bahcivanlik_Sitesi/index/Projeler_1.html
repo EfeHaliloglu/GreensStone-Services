@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/navigator_bar.css">
+    <link rel="stylesheet" href="assets/footer.css">
+
+    <style>
+        .vucut{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: auto;
+            background-color: rgb(203, 230, 221);
+            font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+        .hero3 {
+        width: 100%;
+        height: 40vh; 
+        background-image: url(images/Giris\,AI.png);
+        background-repeat: no-repeat;
+        background-size: cover;        
+        background-position: center;   
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero3 p{
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        font-size: 64px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 150px;
+        color: whitesmoke;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+    }
+
+    .proje-detay-konteyner {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+    }
+
+    .proje-baslik {
+        text-align: center;
+        color: #38761d;
+        margin-bottom: 10px;
+    }
+
+    .proje-bilgileri-ozet {
+        text-align: center;
+        color: #666;
+        margin-bottom: 40px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 20px;
+    }
+
+    /* Ana Flex Yapısı: Her Satırı İki Sütun Yapar */
+    .detay-satir {
+        display: flex;
+        gap: 40px; /* Sütunlar arası boşluk */
+        margin-bottom: 60px;
+        align-items: flex-start; /* İçerik yukarıdan hizalanır */
+    }
+
+    .sutun-icerik {
+        flex: 1; /* Her iki sütunun da eşit genişlikte (yaklaşık %50) olmasını sağlar */
+        padding: 20px;
+        /* Kartların arka plan rengini beyaz yapabilirsiniz */
+        background-color: white; 
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .sutun-icerik h2 {
+        color: #38761d;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 10px;
+        margin-top: 0;
+    }
+    
+
+    .detay-gorsel {
+        width: 100%;
+        object-fit: cover;
+        max-height: 300px;
+        border-radius: 6px;
+        margin-top: 15px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .ayirici {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
+        margin: 40px 0;
+    }
+
+    </style>
+</head>
+<body class="vucut">
+    
+    <div class="hero3">
+        <header class="hero2">
+        <div class="ana_menu_div">
+            
+            <div class="logo_div">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Site Logosu" class="logo"> 
+                </a>
+            </div>
+            
+            <div class="ana_menu">
+                <a href="index.html" class="ana_menu_linkler"> Anasayfa</a>
+                <a href="projeler.html" class="ana_menu_linkler"> Projeler</a>
+                <a href="hakkimizda.html" class="ana_menu_linkler"> Hakkımızda</a>
+                <a href="iletisim.html" class="ana_menu_linkler"> İletişim</a>
+                </div>
+
+        </div>
+        </header>
+        <p>Modern Banyo Tadilatı</p>
+    </div>
+
+    <div class="proje-detay-konteyner">
+    
+    <h1 class="proje-baslik">Kadıköy Modern Banyo Dönüşümü</h1>
+    <div class="proje-bilgileri-ozet">
+        <p>Süre: 3 Hafta | Kapsam: Yıkım, Tesisat, Fayans döşeme | Lokasyon: İstanbul/Kadıköy</p>
+    </div>
+
+    <div class="detay-satir once-kismi">
+        
+        <div class="sutun-icerik gorsel-kutusu">
+            <h2>Öncesi </h2>
+            <img src="images/banyo_tadilat_2.png" alt="Mutfak tadilatı öncesi hali" class="detay-gorsel">
+        </div>
+
+        <div class="sutun-icerik metin-kutusu">
+            <h2>Proje Amacı</h2>
+            <p><strong style="font-size: 20px;">Müşterinin İstekleri:</strong> Mevcut banyoda yer alan eski, yüksek kenarlı küvet ve 
+                ayaklı lavabo, alanı oldukça daraltmaktaydı. Müşteri, özellikle çamaşır makinesinin düzensiz 
+                durduğu, karmaşık görünen bu alanı ferahlatmak ve çamaşır makinesini gizleyecek düzenli bir 
+                tezgah yüzeyine sahip olmak istiyordu.1990'lardan kalma beyaz kare fayanslar, eski aydınlatma ve soğuk mavi duvar rengi, banyonun genel olarak loş, yorgun ve güncel olmayan bir havaya sahip olmasına neden oluyordu. Müşteri, daha modern, lüks ve aydınlık bir estetik dönüşüm istiyordu.</p>
+            <!-- <h3>Karşılaşılan Zorluk:</h3>
+            <ul>
+                <li>Eski tesisatın tamamen yenilenme zorunluluğu.</li>
+                <li>Doğal ışığı artırmak için pencere boyutunun büyütülmesi.</li>
+            </ul> !--> 
+        </div>
+    </div>
+
+    <hr class="ayirici">
+
+    <div class="detay-satir sonra-kismi">
+        
+        <div class="sutun-icerik metin-kutusu">
+            <h2>Uygulanan Çözümler ve Sonuç</h2>
+            <p><strong style="font-size: 20px;">Çözüm Yöntemi:</strong> Eski küvet tamamen kaldırılarak, yerine modern,
+                 cam bölmeli ve siyah çerçeveli duşakabin sistemi kuruldu. Bu, sadece estetiği yükseltmekle kalmadı, aynı
+                  zamanda duş alanını net bir şekilde ayırarak banyodaki hareket alanını artırdı.Ayaklı lavabo yerine, çamaşır
+                   makinesini içine alacak şekilde tasarlanmış, geniş ahşap görünümlü tezgah ve siyah, çekmeceli alt dolap ünitesi 
+                   entegre edildi. Bu tasarım, banyoya hem bir çalışma yüzeyi hem de ekstra depolama kazandırdı.</p>
+            
+        </div>
+        
+        <div class="sutun-icerik gorsel-kutusu">
+            <h2>Sonrası</h2>
+            <img src="images/banyo_tadilat_1.png" alt="Mutfak tadilatı sonrası hali" class="detay-gorsel">
+        </div>
+    </div>
+
+</div>
+
+<footer class="site-footer">
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3>GreenStone Services</h3>
+            <p>Doğayı ve Evinizi Yeniliyoruz</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Hızlı Linkler</h4>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li><a href="projeler.html">Örnek İşler / Foto Galeri</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>İletişim</h4>
+            <p>Telefon: +90 532 123 45 67</p>
+            <p>E-mail: info@GreenStone.com</p>
+            <p>Adres: Atatürk Cad. No:45, Beşiktaş, İstanbul, Türkiye</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 GreenStone Services. Tüm Hakları Saklıdır.</p>
+    </div>
+</footer>
+
+</body>
+</html>

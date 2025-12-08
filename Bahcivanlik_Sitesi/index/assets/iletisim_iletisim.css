@@ -1,0 +1,57 @@
+    .ortala{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        background-color: white;
+        padding: 50px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 12px;
+        max-width: 400px;
+        
+    }
+    .formlar{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .formlar_grup{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        
+    }
+    .formlar_grup input,.formlar_grup textarea{
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    .mesaj_alanı{
+        min-height: 100px;
+        resize: none;
+    }
+
+    .gonder_buton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(95, 94, 94);
+        border-radius: 4px;
+        padding: 12px;
+        border: none;
+        width: 80px;
+        height: 50px;
+        align-self: flex-start;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .gonder_buton:hover {
+        transform: scale(1.05);
+        background-color: #626262;
+    }

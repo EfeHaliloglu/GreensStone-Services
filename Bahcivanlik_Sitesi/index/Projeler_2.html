@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/navigator_bar.css">
+    <link rel="stylesheet" href="assets/footer.css">
+
+    <style>
+        .vucut{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: auto;
+            background-color: rgb(203, 230, 221);
+            font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+        .hero3 {
+        width: 100%;
+        height: 40vh; 
+        background-image: url(images/Giris\,AI.png);
+        background-repeat: no-repeat;
+        background-size: cover;        
+        background-position: center;   
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero3 p{
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        font-size: 64px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 150px;
+        color: whitesmoke;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+    }
+
+    .proje-detay-konteyner {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+    }
+
+    .proje-baslik {
+        text-align: center;
+        color: #38761d;
+        margin-bottom: 10px;
+    }
+
+    .proje-bilgileri-ozet {
+        text-align: center;
+        color: #666;
+        margin-bottom: 40px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 20px;
+    }
+
+    /* Ana Flex Yapısı: Her Satırı İki Sütun Yapar */
+    .detay-satir {
+        display: flex;
+        gap: 40px; /* Sütunlar arası boşluk */
+        margin-bottom: 60px;
+        align-items: flex-start; /* İçerik yukarıdan hizalanır */
+    }
+
+    .sutun-icerik {
+        flex: 1; /* Her iki sütunun da eşit genişlikte (yaklaşık %50) olmasını sağlar */
+        padding: 20px;
+        /* Kartların arka plan rengini beyaz yapabilirsiniz */
+        background-color: white; 
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .sutun-icerik h2 {
+        color: #38761d;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 10px;
+        margin-top: 0;
+    }
+    
+
+    .detay-gorsel {
+        width: 100%;
+        object-fit: cover;
+        max-height: 300px;
+        border-radius: 6px;
+        margin-top: 15px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .ayirici {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
+        margin: 40px 0;
+    }
+
+    </style>
+</head>
+<body class="vucut">
+    
+    <div class="hero3">
+        <header class="hero2">
+        <div class="ana_menu_div">
+            
+            <div class="logo_div">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Site Logosu" class="logo"> 
+                </a>
+            </div>
+            
+            <div class="ana_menu">
+                <a href="index.html" class="ana_menu_linkler"> Anasayfa</a>
+                <a href="projeler.html" class="ana_menu_linkler"> Projeler</a>
+                <a href="hakkimizda.html" class="ana_menu_linkler"> Hakkımızda</a>
+                <a href="iletisim.html" class="ana_menu_linkler"> İletişim</a>
+                </div>
+
+        </div>
+        </header>
+        <p>Villa Peyzajı</p>
+    </div>
+
+    <div class="proje-detay-konteyner">
+    
+    <h1 class="proje-baslik">Sarıyer Villa Peyzaj </h1>
+    <div class="proje-bilgileri-ozet">
+        <p>Süre: 2 Hafta | Kapsam: Çim döşeme, aydınlatma, peyzaj ,   | Lokasyon: İstanbul/Sarıyer</p>
+    </div>
+
+    <div class="detay-satir once-kismi">
+        
+        <div class="sutun-icerik gorsel-kutusu">
+            <h2>Öncesi </h2>
+            <img src="images/Peyzaj-proje_2.jpg" alt="Mutfak tadilatı öncesi hali" class="detay-gorsel">
+        </div>
+
+        <div class="sutun-icerik metin-kutusu">
+            <h2>Proje Amacı</h2>
+            <p><strong style="font-size: 20px;">Müşterinin İstekleri:</strong>Mevcut durum, düzensiz toprak ve
+                 bakımsız çim alanlarından oluşuyordu; bu durum, oturma alanı veya net bir yürüme yolu sunmuyordu.
+                Müşteri, evin girişini netleştiren ve bahçenin tüm yıl boyunca kullanılmasına olanak tanıyan temiz, 
+                işlevsel bir dolaşım yolu istiyordu.Bahçe, düzenli çitler, net sınırlar ve modern bir aydınlatma sistemine 
+                sahip olmadığı için düzensiz ve yetersiz görünüyordu. Müşteri, mülke değer katacak çağdaş ve bakımlı bir dış 
+                mekân estetiği talep etti.Mülkün çevresinde belirgin bir sınırlandırma veya peyzaj elemanı (duvar, çit) bulunmuyordu. 
+                Müşteri, mülk sınırlarını netleştiren ve görsel düzeni sağlayan unsurlar talep etti.</p>
+            <!-- <h3>Karşılaşılan Zorluk:</h3>
+            <ul>
+                <li>Eski tesisatın tamamen yenilenme zorunluluğu.</li>
+                <li>Doğal ışığı artırmak için pencere boyutunun büyütülmesi.</li>
+            </ul> !--> 
+        </div>
+    </div>
+
+    <hr class="ayirici">
+
+    <div class="detay-satir sonra-kismi">
+        
+        <div class="sutun-icerik metin-kutusu">
+            <h2>Uygulanan Çözümler ve Sonuç</h2>
+            <p><strong style="font-size: 20px;">Çözüm Yöntemi:</strong>Bahçenin merkezine, evin girişini vurgulayan ve alanın
+                 kullanımını maksimize eden geniş, modern, koyu renkli taş (fayans) yürüme yolu (sert zemin) oluşturuldu.Yürüme
+                yolunun her iki yanına, görsel dengeyi sağlayan ve farklı peyzaj alanlarını ayıran net, keskin hatlı bordürler inşa edildi.
+            Yürüme yolunun her iki tarafına, alana gece estetiği ve güvenliği katan, modern tasarımlı, alçak bahçe aydınlatmaları yerleştirildi.
+            Bahçe sınırları boyunca, beyaz, minimalist dekoratif çit duvarları örülerek mülkün sınırları netleştirildi ve düzenli bir fon oluşturuldu.
+            Düzensiz çim alanları, yüksek kaliteli, bakımlı ve canlı rulo çim ile kaplandı.Yol boyunca simetrik olarak yerleştirilmiş yüksek, dekoratif 
+            ağaçlar ve renkli güller gibi bitkilerle bahçeye derinlik ve canlılık katıldı.</p>
+            
+        </div>
+        
+        <div class="sutun-icerik gorsel-kutusu">
+            <h2>Sonrası</h2>
+            <img src="images/Peyzaj-proje_1.jpg" alt="Mutfak tadilatı sonrası hali" class="detay-gorsel">
+        </div>
+    </div>
+
+</div>
+
+<footer class="site-footer">
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3>GreenStone Services</h3>
+            <p>Doğayı ve Evinizi Yeniliyoruz</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Hızlı Linkler</h4>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li><a href="projeler.html">Örnek İşler / Foto Galeri</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>İletişim</h4>
+            <p>Telefon: +90 532 123 45 67</p>
+            <p>E-mail: info@GreenStone.com</p>
+            <p>Adres: Atatürk Cad. No:45, Beşiktaş, İstanbul, Türkiye</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 GreenStone Services. Tüm Hakları Saklıdır.</p>
+    </div>
+</footer>
+
+</body>
+</html>

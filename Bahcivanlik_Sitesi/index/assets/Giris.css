@@ -16,6 +16,8 @@ body{
 }
 
 
+
+
 /* Giriş bölümünün arka plan resmi */
 .hero{
   display: grid;
@@ -42,7 +44,10 @@ body{
   margin:0 0 .5rem 0;
   font-size: clamp(1.6rem, 3.5vw, 2.4rem);
 }
-.center-content p{ margin:0; opacity:.9 }
+.center-content p{
+  margin:0; 
+  opacity:.9 
+}
 
 /* Her iki yanın ortak düzeni */
 .side{
