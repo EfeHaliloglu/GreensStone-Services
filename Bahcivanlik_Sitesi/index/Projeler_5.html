@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/navigator_bar.css">
     <link rel="stylesheet" href="assets/footer.css">
-
+    <link rel="icon" href="images/logo.png" type="image/png">
     <style>
         .vucut{
             margin: 0;
@@ -90,6 +90,7 @@
         border-radius: 6px;
         margin-top: 15px;
         box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
     }
 
     .ayirici {
@@ -97,6 +98,28 @@
         height: 1px;
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
         margin: 40px 0;
+    }
+
+    .thumb {
+  width: 200px;
+  cursor: pointer;
+    }
+
+    #modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+    }
+
+    #modal img {
+    max-width: 90%;
+    max-height: 90%;
     }
 
     </style>
@@ -136,7 +159,11 @@
         
         <div class="sutun-icerik gorsel-kutusu">
             <h2>Öncesi </h2>
-            <img src="images/Kayar_kapı_2.jpg" alt="Mutfak tadilatı öncesi hali" class="detay-gorsel">
+            <img src="images/kayar_kapı_2.jpg" class="detay-gorsel" onclick="openImg(this.src)">
+
+        <div id="modal" onclick="closeImg()">
+        <img id="bigImg">
+        </div>
         </div>
 
         <div class="sutun-icerik metin-kutusu">
@@ -168,7 +195,11 @@
         
         <div class="sutun-icerik gorsel-kutusu">
             <h2>Sonrası</h2>
-            <img src="images/kayar_kapı_1.jpg" alt="Mutfak tadilatı sonrası hali" class="detay-gorsel">
+            <img src="images/Kayar_kapı_1.jpg" class="detay-gorsel" onclick="openImg(this.src)">
+
+        <div id="modal" onclick="closeImg()">
+        <img id="bigImg">
+        </div>
         </div>
     </div>
 
@@ -206,5 +237,16 @@
     </div>
 </footer>
 
+<script>
+    function openImg(src) {
+  document.getElementById("bigImg").src = src;
+  document.getElementById("modal").style.display = "flex";
+}
+
+function closeImg() {
+  document.getElementById("modal").style.display = "none";
+}
+
+</script>
 </body>
 </html>
