@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GreenStone Services</title>
     <link rel="stylesheet" href="assets/navigator_bar.css">
     <link rel="stylesheet" href="assets/iletisim_iletisim.css">
     <link rel="stylesheet" href="assets/footer.css">
@@ -108,6 +108,7 @@
 
     <div class="hero3">
         <header class="hero2">
+        
         <div class="ana_menu_div">
             
             <div class="logo_div">
@@ -120,12 +121,22 @@
                 <a href="index.html" class="ana_menu_linkler"> Anasayfa</a>
                 <a href="projeler.html" class="ana_menu_linkler"> Projeler</a>
                 <a href="hakkimizda.html" class="ana_menu_linkler"> Hakkımızda</a>
-                <a href="iletisim.html" class="ana_menu_linkler"> İletişim</a>
-                </div>
 
+                <div class="dropdown">
+                    <a href="iletisim.html" class="ana_menu_linkler"> İletişim</a>
+                
+                <div class="dropdown-menu">
+                    <a href="iletisim.html#calisma">çalışma saatleri</a>
+                    <a href="iletisim.html#sorular">sıkça sorulan sorular</a>
+                    <a href="iletisim.html#konumumuz">Konumumuz</a>
+                    <a href="iletisim.html#bize_ulas">Bize Ulaşın</a>
+                 </div>
+                </div>
+                <a href="Uye_giris.html" class="ana_menu_linkler"> Giriş Yap</a>
         </div>
-        </header>
-        <p>Bizimle İletişime Geçin</p>
+    </div>
+    </header>
+        <p id="bize_ulas">Bizimle İletişime Geçin</p>
     </div>
     
     
@@ -156,7 +167,7 @@
     </form>
 
     <div style="text-align: center;">
-        <h2 class="calisma_text">Çalışma Saatlerimiz</h2>
+        <h2 class="calisma_text" id="calisma">Çalışma Saatlerimiz</h2>
     </div>
 
     <div class="calisma_saatleri_ortala">
@@ -201,7 +212,7 @@
     </div>
 
     <div style="text-align: center;">
-        <h2 class="sorular_txt">Sıkça Sorulan Sorular</h2>
+        <h2 class="sorular_txt" id="sorular">Sıkça Sorulan Sorular</h2>
     </div>
 
     <div class="sorular_ortala">
@@ -262,7 +273,7 @@
     <div class="saatler_ve_harita_sutun konum_sutun">
             <div class="konum_kapsayici">
                 <div class="konum">
-                    <h2 style="background-color: ;">Konumumuz</h2>
+                    <h2 style="background-color: ;" id="konumumuz">Konumumuz</h2>
                 </div>
                 <div class="konum_harita">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2126.935866277281!2d28.972249575792006!3d41.070270310559174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab63f6f8193f1%3A0x36c864a929a1018c!2zQmXFn2lrdGHFny_EsHN0YW5idWw!5e0!3m2!1str!2str!4v1765024068085!5m2!1str!2str" 
